@@ -29,16 +29,16 @@ body{
     color: var(--white);
     display: flex;
     height: 140px;
-    left: 40px;
+    left: 20px;
     position: absolute;
     top: 30px;
-    width: 500px;
+    width: 540px;
 }
 #img, #info{
     height: 140px;
 }
 #img{
-    width: 140px;
+    width: 155px;
     display: inline-flex;
 }
 #profilepicture{
@@ -49,7 +49,7 @@ body{
     width: 100px;
 }
 #info{
-    width: 360px;
+    margin-left: 15px;
 }
 h1{
     text-transform: uppercase;
@@ -68,8 +68,24 @@ ul{
 
 #skills{
     background-color: var(--primary-dark);
+    color: var(--white);
     height: 100%;
     width: 170px;
+}
+#box{
+    margin: 200px 10px 0px 20px;
+}
+#skills h4{
+    color: var(--primary-light);
+    margin: 50px 0px 10px 0px;
+}
+#skills p{
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+.skilllvl{
+    border-top: 4px solid var(--primary-light);
+    width: 120px;
 }
 
 #experience{
