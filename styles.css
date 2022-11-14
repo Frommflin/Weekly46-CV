@@ -1,0 +1,78 @@
+/* color variables */
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #3f484a;
+    --grey-light: #bfc8ca;
+    --primary: #575c7e;
+    --primary-light: #dee1ff;
+    --primary-dark: #131937;
+}
+
+body{
+    background-color: var(--grey-light);
+}
+
+#container{
+    background-color: var(--white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    height: 850px;
+    margin: auto;
+    position: relative;
+    width: 600px;
+}
+
+#personal{
+    background-color: var(--primary);
+    border: 10px solid var(--white);
+    color: var(--white);
+    display: flex;
+    height: 140px;
+    left: 40px;
+    position: absolute;
+    top: 30px;
+    width: 500px;
+}
+#img, #info{
+    height: 140px;
+}
+#img{
+    width: 140px;
+    display: inline-flex;
+}
+#profilepicture{
+    border: 3px solid var(--white);
+    border-radius: 50px;
+    height: 100px;
+    margin: auto;
+    width: 100px;
+}
+#info{
+    width: 360px;
+}
+h1{
+    text-transform: uppercase;
+    margin: 5px;
+}
+ul{
+    font-size: 12px;
+    list-style: none;
+    margin: 10px 0px;
+}
+.icons{
+    height: 10px;
+    height: 10px;
+}
+
+
+#skills{
+    background-color: var(--primary-dark);
+    height: 100%;
+    width: 170px;
+}
+
+#experience{
+    height: 100%;
+    width: 430px;
+}
