@@ -1,18 +1,23 @@
-/* color variables */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&display=swap');
+/* 
+    Color variables 
+*/
 :root{
     --white: #ffffff;
     --black: #000000;
-    --grey: #3f484a;
+    --grey: #6c7274;
     --grey-light: #bfc8ca;
     --primary: #575c7e;
-    --primary-light: #dee1ff;
+    --primary-light: #94b5df;
     --primary-dark: #131937;
 }
 
+/* 
+    Section-independent styling 
+*/
 body{
     background-color: var(--grey-light);
 }
-
 #container{
     background-color: var(--white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -22,8 +27,22 @@ body{
     position: relative;
     width: 600px;
 }
+h1, h4{
+    font-family: 'M PLUS 1p', sans-serif;
+    text-transform: uppercase;
+}
+.box{
+    margin: 200px 10px 0px 20px;
+}
+.box p{
+    font-size: 11px;
+}
 
-#personal{
+/* 
+    Styling for section 1, 
+    peronal information 
+*/
+#section1{
     background-color: var(--primary);
     border: 10px solid var(--white);
     color: var(--white);
@@ -52,35 +71,33 @@ body{
     margin-left: 15px;
 }
 h1{
-    text-transform: uppercase;
-    margin: 5px;
+    margin: 5px 0PX 0PX 0PX;
 }
 ul{
     font-size: 12px;
     list-style: none;
-    margin: 10px 0px;
+    margin-top: 5px;
+    padding-left: 0px;
 }
 .icons{
     height: 10px;
     height: 10px;
 }
 
-
-#skills{
+/* 
+    Styling for section 2, 
+    listed skills and references
+*/
+#section2{
     background-color: var(--primary-dark);
     color: var(--white);
     height: 100%;
-    width: 170px;
 }
-#box{
-    margin: 200px 10px 0px 20px;
-}
-#skills h4{
+#section2 h4{
     color: var(--primary-light);
     margin: 50px 0px 10px 0px;
 }
-#skills p{
-    font-size: 11px;
+#section2 p{
     margin-bottom: 2px;
 }
 .skilllvl{
@@ -88,7 +105,47 @@ ul{
     width: 120px;
 }
 
-#experience{
+/* 
+    Styling for section 3, short presentation, 
+    education and working experiences 
+*/
+#section3{
     height: 100%;
     width: 430px;
+}
+#box1{
+    margin-right: 35px;
+}
+#personal, .information{
+    overflow: auto;
+}
+#personal{
+    height: 140px;
+}
+.information{
+    height: 200px;
+}
+#box1 h4{
+    margin: 10px 0px 0px 0px;
+    background-color: var(--primary);
+    color: var(--white);
+    width: fit-content;
+    padding: 2px 5px;
+}
+.nestedinfo{
+    position: relative;
+    margin-top: 10px;
+}
+.nestedinfo p{
+    margin: 0px;
+}
+.timespan{
+    right: 20px;
+    position: absolute;
+}
+.names{
+    font-weight: bold;
+}
+.location{
+    color: var(--primary-light);
 }
